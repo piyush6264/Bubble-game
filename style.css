@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 95%;
+    background-color: rgb(165 220 174);
+}
+#panel{
+    overflow: hidden;
+    height: 75%;
+    width: 80%; 
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+#ptop{
+    padding: 0px 25%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(92, 159, 103);
+}
+
+.elements{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.elements h2{
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.box{
+    color: black;
+    font-weight: 500;
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+
+#pbtm{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    height: calc(100%- 100px);
+    background-color:#fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.bubble{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(92, 159, 103);
+    color: white;
+    border-radius: 50%;
+    font-weight: 500;
+    margin-top: 10px;
+
+}
+.bubble:hover{
+    cursor: pointer;
+    background-color:rgb(42, 67, 47);
+}
+
+.credit{
+    background-color:rgb(165 220 174) ;
+    height: 5%;
+    color:rgb(42, 67, 47) ;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Resonsive */
+
+@media only screen and (max-width:850px){
+
+      
+    #ptop{
+        padding: 10px;
+       
+        display: flex;
+        justify-content:space-between;
+        color: white;
+        align-items:center;
+        text-align: start;
+        width: 100%;
+        height: 100px;
+        background-color: rgb(30, 197, 141);
+    }
+
+    .elements{
+        width: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 12px 36px 13px 19px;
+        
+    }
+
+    .elements h2{
+        font-weight: 500;
+        font-size: 22px;
+    }
+    
+    .box{
+        color: black;
+        font-weight: 500;
+        font-size: 18px;
+        padding: 1px 2px;
+        margin: -10px;
+        border-radius: 5px;
+        background-color: aliceblue;
+    }
+
+}
